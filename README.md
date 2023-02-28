@@ -22,3 +22,12 @@ tsc main.ts
 tsc main.ts --watch
 ```
 
+Generate `tsconfig.json`:
+
+```shell
+tsc --init
+
+# then, compile ts files with tsconfig setting
+tsc --watch
+```
+
