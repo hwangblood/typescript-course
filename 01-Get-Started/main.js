@@ -1,2 +1,2 @@
 var username = "hwangblood";
-console.log(username);
+console.log("Hello ".concat(username));

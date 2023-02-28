@@ -14,3 +14,11 @@ Global Install Typescript with `npm`:
 npm i typescript -g
 ```
 
+Compile TS File:
+
+```shell
+tsc main.ts
+
+tsc main.ts --watch
+```
+
