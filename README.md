@@ -6,3 +6,11 @@
 
 Learn Typescript from absolute beginner to full projects to React + Typescript in the same project. This playlist will teach you all of the Typescript fundamentals.
 
+## Get Started
+
+Global Install Typescript with `npm`:
+
+```shell
+npm i typescript -g
+```
+
