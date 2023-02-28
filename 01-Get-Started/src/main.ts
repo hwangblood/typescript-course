@@ -9,3 +9,5 @@ let c: number = 2;
 
 console.log(a / b);
 console.log(c * b);
+
+console.log(2 * "1234");

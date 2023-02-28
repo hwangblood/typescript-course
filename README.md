@@ -14,7 +14,7 @@ Global Install Typescript with `npm`:
 npm i typescript -g
 ```
 
-Compile TS File:
+### Compile TS File:
 
 ```shell
 tsc main.ts
@@ -22,12 +22,20 @@ tsc main.ts
 tsc main.ts --watch
 ```
 
-Generate `tsconfig.json`:
+### Generate `tsconfig.json`:
 
 ```shell
 tsc --init
 
 # then, compile ts files with tsconfig setting
 tsc --watch
+```
+
+### Compile with `noEmitOnError`:
+
+you can enable `noEmitOnError` flag in `tsconfig.json` or with a command
+
+```shell
+tsc --watch --noEmitOnError
 ```
 
