@@ -95,3 +95,20 @@ let jim2: Guitarist = {
 evh2 = jim2;
 
 // evh2.years = 22; // ! roperty 'years' does not exist on type 'Guitarist'.
+
+type Musician = {
+  name: string;
+  active?: boolean; // * Infer as 'boolean | undefined' union type
+  albums: (string | number)[];
+};
+
+let jayChou: Musician = {
+  name: "Jay Chou",
+  albums: ["Sunny Day", 1983, "Simple Love"],
+};
+
+let stefanieSun: Musician = {
+  name: "Stefanie Sun",
+  active: true,
+  albums: ["Green Light", 1978, "a perfect day"],
+};

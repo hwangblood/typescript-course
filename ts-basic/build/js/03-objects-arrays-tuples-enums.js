@@ -64,4 +64,12 @@ let jim2 = {
 };
 // evh2 = jim; // ! Property 'active' is missing in type '{ name: string; albums: string[]; }' but required in type 'Guitarist'.
 evh2 = jim2;
-// evh2.years = 22; // ! roperty 'years' does not exist on type 'Guitarist'.
+let jayChou = {
+    name: "Jay Chou",
+    albums: ["Sunny Day", 1983, "Simple Love"],
+};
+let stefanieSun = {
+    name: "Stefanie Sun",
+    active: true,
+    albums: ["Green Light", 1978, "a perfect day"],
+};
