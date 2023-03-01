@@ -44,3 +44,12 @@ const exampleObj = {
 }; // * Inference '{ prop1: string; prop2: number; }' object type
 // exampleObj.prop2 = true; // ! Type 'boolean' is not assignable to type 'number'.
 exampleObj.prop2 = 22;
+// let evh: Guitarist = {
+//   name: "Eddie",
+//   active: true,
+// }; // !Property 'albums' is missing in type '{ name: string; active: true; }' but required in type 'Guitarist'.
+let evh2 = {
+    name: "Eddie",
+    active: true,
+    albums: [1984, 1999, "OU812"],
+};

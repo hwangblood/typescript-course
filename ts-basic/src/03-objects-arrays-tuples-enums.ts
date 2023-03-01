@@ -61,3 +61,20 @@ const exampleObj = {
 // exampleObj.prop2 = true; // ! Type 'boolean' is not assignable to type 'number'.
 
 exampleObj.prop2 = 22;
+
+type Guitarist = {
+  name: string;
+  active: boolean;
+  albums: (string | number)[];
+};
+
+// let evh: Guitarist = {
+//   name: "Eddie",
+//   active: true,
+// }; // !Property 'albums' is missing in type '{ name: string; active: true; }' but required in type 'Guitarist'.
+
+let evh2: Guitarist = {
+  name: "Eddie",
+  active: true,
+  albums: [1984, 1999, "OU812"],
+};
