@@ -29,3 +29,6 @@ let lastName;
 lastName = "sichuan";
 lastName = 123;
 lastName = true;
+// check inference to see re1 should be 'RegExp' type
+let re1 = /\w+/g;
+let re2 = /d(b+)d/g;

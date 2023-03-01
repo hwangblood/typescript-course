@@ -35,3 +35,7 @@ let lastName: string | number | boolean;
 lastName = "sichuan";
 lastName = 123;
 lastName = true;
+
+// check inference to see re1 should be 'RegExp' type
+let re1 = /\w+/g;
+let re2: RegExp = /d(b+)d/g;
