@@ -43,3 +43,12 @@ let mixed = ["john", 10, false]; // * Impicit '(string | number | boolean)[]' un
 // myTuple[1] = false; // ! Type 'boolean' is not assignable to type 'number'.
 
 myTuple[1] = 20200301;
+
+// * Objects
+let myObj: object;
+myObj = [];
+console.log(typeof myObj); // output: object
+
+myObj = bands;
+myObj = {};
+console.log(typeof myObj); // output: object
