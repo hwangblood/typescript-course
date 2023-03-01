@@ -73,3 +73,7 @@ let stefanieSun = {
     active: true,
     albums: ["Green Light", 1978, "a perfect day"],
 };
+const greetMusician = (musician) => {
+    return `Hello ${musician.name}.`;
+};
+console.log(greetMusician(stefanieSun));
