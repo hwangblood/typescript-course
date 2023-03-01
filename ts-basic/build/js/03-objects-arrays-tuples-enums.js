@@ -53,3 +53,15 @@ let evh2 = {
     active: true,
     albums: [1984, 1999, "OU812"],
 };
+let jim = {
+    name: "Jimmy",
+    albums: ["I", "II", "IV"],
+};
+let jim2 = {
+    name: "Jimmy",
+    active: false,
+    albums: ["I", "II", "IV"],
+};
+// evh2 = jim; // ! Property 'active' is missing in type '{ name: string; albums: string[]; }' but required in type 'Guitarist'.
+evh2 = jim2;
+// evh2.years = 22; // ! roperty 'years' does not exist on type 'Guitarist'.
