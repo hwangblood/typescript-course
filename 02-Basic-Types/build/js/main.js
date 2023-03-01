@@ -10,3 +10,7 @@ meaningOfLife = 10.9;
 isLoading = true;
 isLoading = false;
 // isLoading = 123; // ! Type 'number' is not assignable to type 'boolean'.
+let album;
+album = 123;
+album = "good";
+album = true;
