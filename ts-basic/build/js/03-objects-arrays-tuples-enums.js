@@ -80,3 +80,12 @@ console.log(greetMusician(stefanieSun));
 let persont = { name: "person t" };
 let personi = { name: "person i" };
 personi = persont;
+const printPerson = (person) => {
+    if (person.age) {
+        console.log(`Hello ${person.name}, ${person.age.toFixed()} years old.`);
+    }
+    console.log(`Hello ${person.name}.`);
+};
+printPerson(personi);
+personi.age = 25;
+printPerson(personi);
