@@ -20,3 +20,14 @@ let bands = []; // * explicit 'string[]' type
 testAny = ["well", 12, 44.44, true, null, -100];
 bands.push("halen");
 // bands.push(true); // ! Argument of type 'boolean' is not assignable to parameter of type 'string'.
+// * Tuple
+let myTuple = ["blood", 2023, true];
+let mixed = ["john", 10, false]; // * Impicit '(string | number | boolean)[]' union array
+// ! Type '(string | number | boolean)[]' is not assignable to type '[string, number, boolean]'.
+// ! Target requires 3 element(s) but source may have fewer.(mixed may have only one or two elements)
+// myTuple = mixed;
+// ! Type '"word"' is not assignable to type 'undefined'.
+// ! Tuple type '[string, number, boolean]' of length '3' has no element at index '3'.
+// myTuple[3] = "word";
+// myTuple[1] = false; // ! Type 'boolean' is not assignable to type 'number'.
+myTuple[1] = 20200301;
