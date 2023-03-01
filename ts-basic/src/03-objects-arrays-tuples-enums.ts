@@ -19,3 +19,11 @@ guitars.unshift("hello");
 
 guitars = stringArr;
 mixeData = guitars;
+
+let testAny = []; // * Implicit 'any[]' type
+let bands: string[] = []; // * explicit 'string[]' type
+
+testAny = ["well", 12, 44.44, true, null, -100];
+
+bands.push("halen");
+// bands.push(true); // ! Argument of type 'boolean' is not assignable to parameter of type 'string'.
