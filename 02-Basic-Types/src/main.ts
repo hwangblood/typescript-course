@@ -25,3 +25,13 @@ const sum = (a: number, b: number) => {
 const concat = (a: number, b: string) => {
   return a + b; // * TS infer to return a 'string' type
 };
+
+let firstName: string | number;
+firstName = "chengdu";
+firstName = 6666;
+// firstName = false; // ! Type 'boolean' is not assignable to type 'string | number'.
+
+let lastName: string | number | boolean;
+lastName = "sichuan";
+lastName = 123;
+lastName = true;
