@@ -38,3 +38,9 @@ console.log(typeof myObj); // output: object
 myObj = bands;
 myObj = {};
 console.log(typeof myObj); // output: object
+const exampleObj = {
+    prop1: "blood",
+    prop2: 21,
+}; // * Inference '{ prop1: string; prop2: number; }' object type
+// exampleObj.prop2 = true; // ! Type 'boolean' is not assignable to type 'number'.
+exampleObj.prop2 = 22;
