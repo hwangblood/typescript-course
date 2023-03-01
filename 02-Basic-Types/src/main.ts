@@ -17,3 +17,11 @@ let album: any;
 album = 123;
 album = "good";
 album = true;
+
+// ! Parameter 'a' and 'b' implicitly has an 'any' type.
+const sum = (a: number, b: number) => {
+  return a + b; // * TS infer to return a 'number' type
+};
+const concat = (a: number, b: string) => {
+  return a + b; // * TS infer to return a 'string' type
+};

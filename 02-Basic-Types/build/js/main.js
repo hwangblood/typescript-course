@@ -14,3 +14,10 @@ let album;
 album = 123;
 album = "good";
 album = true;
+// ! Parameter 'a' and 'b' implicitly has an 'any' type.
+const sum = (a, b) => {
+    return a + b; // * TS infer to return a 'number' type
+};
+const concat = (a, b) => {
+    return a + b; // * TS infer to return a 'string' type
+};
