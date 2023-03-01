@@ -77,3 +77,6 @@ const greetMusician = (musician) => {
     return `Hello ${musician.name}.`;
 };
 console.log(greetMusician(stefanieSun));
+let persont = { name: "person t" };
+let personi = { name: "person i" };
+personi = persont;

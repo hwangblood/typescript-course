@@ -117,3 +117,21 @@ const greetMusician = (musician: Musician) => {
   return `Hello ${musician.name}.`;
 };
 console.log(greetMusician(stefanieSun));
+
+// * 'type' and 'interface' do the same thing, that define a object should have what kind of properties
+// * Recommand: instead 'type' of 'interface' when define a object struct, more about 'interface' in soon
+type PersonT = {
+  name: string;
+  age?: number;
+  birthday?: Date;
+};
+
+interface PersonI {
+  name: string;
+  age?: number;
+  birthday?: Date;
+}
+
+let persont: PersonT = { name: "person t" };
+let personi: PersonI = { name: "person i" };
+personi = persont;
