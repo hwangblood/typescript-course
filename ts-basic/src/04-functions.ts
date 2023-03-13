@@ -33,3 +33,8 @@ const logMsg = (message: any): void => {
 logMsg("Hello @hwangblood");
 logMsg(`2 + 3 = ${add(2, 3)}`);
 logMsg(`3.1 + 5.2 = ${add(3.1, 5.2)}`);
+
+// * The function  keyword
+let substract = function (c: number, d: number): number {
+  return c - d;
+};
