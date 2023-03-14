@@ -93,3 +93,10 @@ const infinite2 = () => {
     if (1 > 100) break;
   }
 };
+
+// * Using the never type
+const numberOrString = (value: number | string): string => {
+  if (typeof value === "string") return "string";
+  if (typeof value === "number") return "number";
+  return createError("This should never happen!");
+};
