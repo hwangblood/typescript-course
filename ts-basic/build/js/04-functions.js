@@ -26,4 +26,10 @@ let substract = function (c, d) {
 let multiply = function (c, d) {
     return c * d;
 };
-logMsg(`2 * 2 = ${multiply(2, 2)}`);
+// * Optional Parameters
+const addAll = (a, b, c) => {
+    if (typeof c !== "undefined") {
+        return a + b + c;
+    }
+    return a + b;
+};

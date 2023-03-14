@@ -51,4 +51,10 @@ interface mathFunction {
   (a: number, b: number): number;
 }
 
-logMsg(`2 * 2 = ${multiply(2, 2)}`);
+// * Optional Parameters
+const addAll = (a: number, b: number, c?: number) => {
+  if (typeof c !== "undefined") {
+    return a + b + c;
+  }
+  return a + b;
+};
