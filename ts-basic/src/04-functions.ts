@@ -40,10 +40,15 @@ let substract = function (c: number, d: number): number {
 };
 
 // * Function Type ALiases
-type mathFunction = (a: number, b: number) => number;
+// type mathFunction = (a: number, b: number) => number;
 
 let multiply: mathFunction = function (c, d) {
   return c * d;
 };
+
+// * Function Interface
+interface mathFunction {
+  (a: number, b: number): number;
+}
 
 logMsg(`2 * 2 = ${multiply(2, 2)}`);

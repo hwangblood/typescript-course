@@ -21,6 +21,8 @@ logMsg(`3.1 + 5.2 = ${add(3.1, 5.2)}`);
 let substract = function (c, d) {
     return c - d;
 };
+// * Function Type ALiases
+// type mathFunction = (a: number, b: number) => number;
 let multiply = function (c, d) {
     return c * d;
 };
