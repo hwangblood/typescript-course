@@ -33,3 +33,8 @@ const addAll = (a, b, c) => {
     }
     return a + b;
 };
+// * Default Parameters
+const sumAll = (a = 10, b, c = 0) => {
+    return a + b + c;
+};
+logMsg(sumAll(undefined, 3));

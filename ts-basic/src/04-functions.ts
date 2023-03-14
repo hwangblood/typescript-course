@@ -58,3 +58,10 @@ const addAll = (a: number, b: number, c?: number) => {
   }
   return a + b;
 };
+
+// * Default Parameters
+const sumAll = (a: number = 10, b: number, c: number = 0) => {
+  return a + b + c;
+};
+
+logMsg(sumAll(undefined, 3));
