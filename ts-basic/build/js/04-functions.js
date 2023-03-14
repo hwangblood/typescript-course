@@ -44,3 +44,23 @@ const total = (a, ...nums) => {
     return a + nums.reduce((prev, curr) => prev + curr);
 };
 logMsg(total(1, 2, 3, 4));
+// * The never type
+const createError = (errString) => {
+    throw new Error(errString);
+};
+// infer return never type
+const infinite1 = () => {
+    let i = 1;
+    while (true) {
+        i++;
+    }
+};
+// infer return void type
+const infinite2 = () => {
+    let i = 1;
+    while (true) {
+        i++;
+        if (1 > 100)
+            break;
+    }
+};
