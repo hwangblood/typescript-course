@@ -64,11 +64,15 @@ const infinite2 = () => {
             break;
     }
 };
+// * Custom Type Guard
+const isNumber = (value) => {
+    return typeof value === "number" ? true : false;
+};
 // * Using the never type
 const numberOrString = (value) => {
     if (typeof value === "string")
         return "string";
-    if (typeof value === "number")
+    if (isNumber(value))
         return "number";
     return createError("This should never happen!");
 };
