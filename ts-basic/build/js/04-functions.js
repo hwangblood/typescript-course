@@ -38,3 +38,9 @@ const sumAll = (a = 10, b, c = 0) => {
     return a + b + c;
 };
 logMsg(sumAll(undefined, 3));
+// * Function with rest params
+// rest param should always at the end of function params
+const total = (a, ...nums) => {
+    return a + nums.reduce((prev, curr) => prev + curr);
+};
+logMsg(total(1, 2, 3, 4));
