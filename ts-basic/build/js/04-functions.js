@@ -21,3 +21,7 @@ logMsg(`3.1 + 5.2 = ${add(3.1, 5.2)}`);
 let substract = function (c, d) {
     return c - d;
 };
+let multiply = function (c, d) {
+    return c * d;
+};
+logMsg(`2 * 2 = ${multiply(2, 2)}`);

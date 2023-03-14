@@ -38,3 +38,12 @@ logMsg(`3.1 + 5.2 = ${add(3.1, 5.2)}`);
 let substract = function (c: number, d: number): number {
   return c - d;
 };
+
+// * Function Type ALiases
+type mathFunction = (a: number, b: number) => number;
+
+let multiply: mathFunction = function (c, d) {
+  return c * d;
+};
+
+logMsg(`2 * 2 = ${multiply(2, 2)}`);
