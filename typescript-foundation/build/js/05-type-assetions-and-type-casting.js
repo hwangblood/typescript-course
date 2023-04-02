@@ -13,3 +13,14 @@ const addOrConcat = (a, b, c) => {
     return "" + a + b;
 };
 let myVal = addOrConcat(2, 3, "concat");
+// * Caution: Assertions allow mistakes!
+// Be careful! TS sees no error - but a string is returned
+let myVal2 = addOrConcat(2, 3, "concat");
+console.log({ myVal2 }); // {myVal2: '23'}
+// * Double Casting and the unknown type
+// * DOM Selection Types
+// * Non-Null Assertions
+// * Angle Brackets and the DOM
+// * Student Challenge
+// * Solution 1: Beginners
+// * Solution 2: Type Assertion
