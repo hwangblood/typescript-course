@@ -24,11 +24,16 @@ const addOrConcat = (
 let myVal: string = addOrConcat(2, 3, "concat") as string;
 
 // * Caution: Assertions allow mistakes!
-// Be careful! TS sees no error - but a string is returned
+// Be careful! TS sees no error - but a string is returned, becase the returned value
+// could be a string or number
 let myVal2: number = addOrConcat(2, 3, "concat") as number;
-console.log({ myVal2 }); // {myVal2: '23'}
+console.log({ myVal2 }, typeof myVal2); // {myVal2: '23'}
 
 // * Double Casting and the unknown type
+// 10 as string; // ! can't do this
+let val3 = 10 as unknown as string; // in fact, it's a value of number
+console.log({ val3 }, typeof val3);
+
 // * DOM Selection Types
 // * Non-Null Assertions
 // * Angle Brackets and the DOM
