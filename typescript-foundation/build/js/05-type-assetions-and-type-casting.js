@@ -28,12 +28,12 @@ const img2 = document.querySelector("#imgId"); // Element | null
 const img3 = document.getElementById("#imgId"); // HTMLElement | null
 // * Non-Null Assertions
 img === null || img === void 0 ? void 0 : img.src; // notes: img is nullable
-img2.src; // Element hasn't src property
-img3.src; // HTMLElement hasn't src property
+img2 === null || img2 === void 0 ? void 0 : img2.src; // Element hasn't src property
+img3 === null || img3 === void 0 ? void 0 : img3.src; // HTMLElement hasn't src property
 // * Angle Brackets and the DOM
 // notes: this will not work in tsx file for react
 const nextImg = document.getElementById("#imgId");
-nextImg.src;
+nextImg === null || nextImg === void 0 ? void 0 : nextImg.src;
 // * Student Challenge
 // Original JS Code - refactor it with ts type assetion
 /*

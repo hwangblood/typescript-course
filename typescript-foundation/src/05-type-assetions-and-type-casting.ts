@@ -41,13 +41,13 @@ const img3 = document.getElementById("#imgId"); // HTMLElement | null
 
 // * Non-Null Assertions
 img?.src; // notes: img is nullable
-(img2 as HTMLImageElement).src; // Element hasn't src property
-(img3 as HTMLImageElement).src; // HTMLElement hasn't src property
+(img2 as HTMLImageElement)?.src; // Element hasn't src property
+(img3 as HTMLImageElement)?.src; // HTMLElement hasn't src property
 
 // * Angle Brackets and the DOM
 // notes: this will not work in tsx file for react
 const nextImg = <HTMLImageElement>document.getElementById("#imgId");
-nextImg.src;
+nextImg?.src;
 
 // * Student Challenge
 // Original JS Code - refactor it with ts type assetion
@@ -57,5 +57,7 @@ const thisYear = new Date().getFullYear();
 year.setAttribute("datetime", thisYear); // ! year could be null. thisYear is a number, but the function actually want a string
 year.textContent = thisYear; // ! year could be null
  */
+
 // * Solution 1: Beginners
+
 // * Solution 2: Type Assertion
