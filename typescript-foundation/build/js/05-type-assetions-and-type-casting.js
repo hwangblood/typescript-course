@@ -31,6 +31,9 @@ img === null || img === void 0 ? void 0 : img.src; // notes: img is nullable
 img2.src; // Element hasn't src property
 img3.src; // HTMLElement hasn't src property
 // * Angle Brackets and the DOM
+// notes: this will not work in tsx file for react
+const nextImg = document.getElementById("#imgId");
+nextImg.src;
 // * Student Challenge
 // * Solution 1: Beginners
 // * Solution 2: Type Assertion

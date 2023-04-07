@@ -45,6 +45,10 @@ img?.src; // notes: img is nullable
 (img3 as HTMLImageElement).src; // HTMLElement hasn't src property
 
 // * Angle Brackets and the DOM
+// notes: this will not work in tsx file for react
+const nextImg = <HTMLImageElement>document.getElementById("#imgId");
+nextImg.src;
+
 // * Student Challenge
 // * Solution 1: Beginners
 // * Solution 2: Type Assertion
