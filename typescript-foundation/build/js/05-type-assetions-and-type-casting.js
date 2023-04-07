@@ -35,5 +35,12 @@ img3.src; // HTMLElement hasn't src property
 const nextImg = document.getElementById("#imgId");
 nextImg.src;
 // * Student Challenge
+// Original JS Code - refactor it with ts type assetion
+/*
+const year = document.getElementById("year");
+const thisYear = new Date().getFullYear();
+year.setAttribute("datetime", thisYear); // ! year could be null. thisYear is a number, but the function actually want a string
+year.textContent = thisYear; // ! year could be null
+ */
 // * Solution 1: Beginners
 // * Solution 2: Type Assertion
