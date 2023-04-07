@@ -23,6 +23,9 @@ console.log({ myVal2 }, typeof myVal2); // {myVal2: '23'}
 let val3 = 10; // in fact, it's a value of number
 console.log({ val3 }, typeof val3);
 // * DOM Selection Types
+const img = document.querySelector("img"); // HTMLImageElement | null
+const img2 = document.querySelector("#imgId"); // Element | null
+const img3 = document.getElementById("#imgId"); // HTMLElement | null
 // * Non-Null Assertions
 // * Angle Brackets and the DOM
 // * Student Challenge
