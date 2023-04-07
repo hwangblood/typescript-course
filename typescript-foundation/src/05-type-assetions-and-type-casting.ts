@@ -59,6 +59,7 @@ year.textContent = thisYear; // ! year could be null
  */
 
 // * Solution 1: Beginners
+/* 
 let year: HTMLElement | null = document.getElementById("year");
 let thisYear: string;
 thisYear = new Date().getFullYear().toString();
@@ -66,6 +67,11 @@ thisYear = new Date().getFullYear().toString();
 if (year) {
   year.setAttribute("datetime", thisYear);
   year.textContent = thisYear;
-}
+} */
 
 // * Solution 2: Type Assertion
+const year = document.getElementById("year") as HTMLSpanElement;
+const thisYear: string = (new Date().getFullYear() + 1).toString();
+// year is no-null
+year.setAttribute("datetime", thisYear);
+year.textContent = thisYear;
