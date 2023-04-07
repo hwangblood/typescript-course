@@ -27,6 +27,9 @@ const img = document.querySelector("img"); // HTMLImageElement | null
 const img2 = document.querySelector("#imgId"); // Element | null
 const img3 = document.getElementById("#imgId"); // HTMLElement | null
 // * Non-Null Assertions
+img === null || img === void 0 ? void 0 : img.src; // notes: img is nullable
+img2.src; // Element hasn't src property
+img3.src; // HTMLElement hasn't src property
 // * Angle Brackets and the DOM
 // * Student Challenge
 // * Solution 1: Beginners
