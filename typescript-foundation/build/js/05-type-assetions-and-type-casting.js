@@ -43,4 +43,12 @@ year.setAttribute("datetime", thisYear); // ! year could be null. thisYear is a 
 year.textContent = thisYear; // ! year could be null
  */
 // * Solution 1: Beginners
+let year = document.getElementById("year");
+let thisYear;
+thisYear = new Date().getFullYear().toString();
+// when year is nul, the sentences in if-condition won't be called
+if (year) {
+    year.setAttribute("datetime", thisYear);
+    year.textContent = thisYear;
+}
 // * Solution 2: Type Assertion
