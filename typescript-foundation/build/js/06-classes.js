@@ -50,6 +50,9 @@ console.log(basket.getNumOfPeople());
 // ! Property 'count' is protected and only accessible within class 'Sport' and its subclasses.
 // basket.count;
 // * Compiling & Running Code
+// ! Typescript doesn't like this, but the compiled JavaScript (with --noEmitOnError flag) code also can work well.
+// but don't do this,  it's not recommanded.
+console.log(basket.count);
 // * Extends for Subclasses
 // * Implements for Interfaces
 // * Static Class Members
