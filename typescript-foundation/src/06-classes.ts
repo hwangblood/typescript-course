@@ -46,11 +46,11 @@ class Sport {
     private numOfPeople: number
   ) {}
 
-  public getNumOfPeople (){
+  public getNumOfPeople() {
     return `The number of people is ${this.numOfPeople}`;
   }
 }
-const basket = new Sport('basket',2, 10);
+const basket = new Sport("basket", 2, 10);
 console.log(basket);
 
 console.log(basket.getNumOfPeople());
@@ -64,8 +64,27 @@ console.log(basket.getNumOfPeople());
 // but don't do this,  it's not recommanded.
 console.log(basket.count);
 
-
 // * Extends for Subclasses
+class SportSecond extends Sport {
+  constructor(
+    public place: string,
+    name: string,
+    count: number,
+    numOfPeople: number
+  ) {
+    // super function must be called at the top constructor
+    super(name, count, numOfPeople);
+    this.place = `${place} - NeoSoft`;
+  }
+  public getCount() {
+    // access protected property in subclass
+    return `count: ${this.count}`;
+  }
+}
+const sportsecond = new SportSecond("Square", "sportsecond", 3, 100);
+console.log(sportsecond);
+console.log(sportsecond.getCount());
+
 // * Implements for Interfaces
 // * Static Class Members
 // * Getters & Setters
