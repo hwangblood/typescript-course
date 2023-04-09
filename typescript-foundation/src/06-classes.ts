@@ -30,6 +30,14 @@ class Person {
 }
 
 // * Definite Assignment Assertion Operator
+class Player {
+  lang!: string;
+  constructor(public name: string) {}
+}
+const p = new Player('VCL');
+p.lang = "zh-CN";
+console.log(p);
+
 // * Private & Protected Examples
 // * Compiling & Running Code
 // * Extends for Subclasses
