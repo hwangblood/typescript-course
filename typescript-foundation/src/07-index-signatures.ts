@@ -72,5 +72,20 @@ const todaysTransactions2: TransactionObj = {
 };
 
 // * Optional properties
+interface Student {
+  [key: string]: string | number | number[] | undefined;
+  name: string;
+  GPA: number;
+  classes?: number[];
+}
+
+const student: Student = {
+  name: "Doug",
+  GPA: 3.5,
+  // classes: [1, 2, 3],  // * this is optional, you don't have to set it
+};
+
+console.log(student.test); // undefined
+
 // * keyof Assertions
 // * Record utility type vs index signatures

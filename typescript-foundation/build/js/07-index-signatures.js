@@ -53,6 +53,11 @@ const todaysTransactions2 = {
     Job: 50,
     Dave: 42,
 };
-// * Optional properties
+const student = {
+    name: "Doug",
+    GPA: 3.5,
+    // classes: [1, 2, 3],  // * this is optional, you don't have to set it
+};
+console.log(student.test); // undefined
 // * keyof Assertions
 // * Record utility type vs index signatures
