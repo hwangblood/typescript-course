@@ -28,6 +28,7 @@ const todaysNet = (transctions) => {
     }
     return total;
 };
+console.log(todaysNet(todaysTransactions));
 // * readonly modifier
 // * Non-existing properties
 // * Required properties combined with an index signature
