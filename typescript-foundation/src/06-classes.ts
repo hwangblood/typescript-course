@@ -61,8 +61,8 @@ console.log(basket.getNumOfPeople());
 
 // * Compiling & Running Code
 // ! Typescript doesn't like this, but the compiled JavaScript (with --noEmitOnError flag) code also can work well.
-// but don't do this,  it's not recommanded.
-console.log(basket.count);
+// but it's not recommanded, don't do this
+// HACK console.log(basket.count);
 
 // * Extends for Subclasses
 class SportSecond extends Sport {
@@ -86,5 +86,30 @@ console.log(sportsecond);
 console.log(sportsecond.getCount());
 
 // * Implements for Interfaces
+interface Singer {
+  name: string;
+  instrument: string;
+  play(action: string): string;
+}
+
+class ClassicPlayer implements Singer {
+  name: string;
+  instrument: string;
+
+  constructor(name: string, instrument: string) {
+    this.name = name;
+    this.instrument = instrument;
+  }
+
+  play(action: string) {
+    return `${this.name} is playing ${this.instrument} with ${action}`;
+  }
+}
+
+const classicplayer = new ClassicPlayer("VCL", "guitar");
+const message = classicplayer.play("rock");
+console.log(message);
+
 // * Static Class Members
+
 // * Getters & Setters
