@@ -42,6 +42,7 @@ console.log(todaysNet(todaysTransactions));
 // ! can set readonly properties
 // todaysTransactions.Pizza = -100;
 // * Non-existing properties
+console.log(todaysTransactions["Dave"]); // return undefined
 // * Required properties combined with an index signature
 // * Optional properties
 // * keyof Assertions
