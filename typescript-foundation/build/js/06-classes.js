@@ -102,3 +102,32 @@ const peeps3 = new Peeps("VCL3");
 console.log(peeps3);
 console.log(`Peeps' count: ${Peeps.count}`);
 // * Getters & Setters
+class Banders {
+    constructor() {
+        this.dataState = [];
+    }
+    get data() {
+        return this.dataState;
+    }
+    set data(value) {
+        // * actually we want an array of strings
+        if (Array.isArray(value) && value.every((el) => typeof el === "string")) {
+            this.dataState = value;
+            return;
+        }
+        else
+            throw new Error("Param 'value' is not an array of strings");
+    }
+}
+const banders = new Banders();
+banders.data = ["VCL", "VCL2", "VCL3"];
+console.log(`banders: ${banders.data}`);
+banders.data = [...banders.data, "Led Zep"];
+console.log(`banders: ${banders.data}`);
+try {
+    banders.data = ["Van Halen", 1234];
+    console.log(`banders: ${banders.data}`);
+}
+catch (error) {
+    console.log(`error: ${error.message}`);
+}
