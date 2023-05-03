@@ -57,3 +57,6 @@ you can enable `noEmitOnError` flag in `tsconfig.json` or with a command
 tsc --watch --noEmitOnError
 ```
 
+## Resourses
+
+- [Index Signatures in TypeScript](https://dmitripavlutin.com/typescript-index-signatures/)
