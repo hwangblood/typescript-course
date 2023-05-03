@@ -73,3 +73,15 @@ Object.keys(student).map((key) => {
     console.log(student[key]);
 });
 // * Record utility type vs index signatures
+const logStudentByKey = (student, key) => {
+    console.log(`Student ${key}: ${student[key]}`);
+};
+logStudentByKey(student, "GPA");
+const mothlyIncomes = {
+    salary: 500,
+    bonus: 100,
+    sidehustle: 250,
+};
+for (let key in mothlyIncomes) {
+    console.log(`${key}: ${mothlyIncomes[key]}`);
+}
