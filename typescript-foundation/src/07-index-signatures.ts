@@ -40,13 +40,19 @@ const todaysNet = (transctions: TransactionObj): number => {
  * The key of the index signature can only be a string, number, or symbol.
  * Other types are not allowed, such as : boolean, object, function, array, or any.
  */
-interface TransactionObj {
-  [key: string]: number;
-}
+// interface TransactionObj {
+//   [key: string]: number;
+// }
 
 console.log(todaysNet(todaysTransactions));
 
 // * readonly modifier
+interface TransactionObj {
+  readonly [key: string]: number;
+}
+// ! can set readonly properties
+// todaysTransactions.Pizza = -100;
+
 // * Non-existing properties
 // * Required properties combined with an index signature
 // * Optional properties
