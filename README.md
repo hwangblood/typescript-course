@@ -1,5 +1,3 @@
- 
-
 # Typescript Course
 
 [**Typescript Tutorials for Beginners**](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6NS8GXt5nPrcYpust89zq_b) by [Dave Gray](https://www.youtube.com/@DaveGrayTeachesCode)
@@ -15,13 +13,13 @@ Learn Typescript from absolute beginner to full projects to React + Typescript i
 - Chapter 7: Index Signatures & keyof Assertions
 - Chapter 8: Generics
 - Chapter 9: Utility Types
-- Chapter 10: Vite.js + TypeScript 
+- Chapter 10: Vite.js + TypeScript
 - Chapter 11: TypeScript Project
 - Chapter 12: React + TypeScript
 - Chapter 13: React Hooks + TypeScript
 - Chapter 14: React useReducer + TypeScript
-- Chapter 15: React useContext + TypeScript 
-- Chapter 16: React + TypeScript Project 
+- Chapter 15: React useContext + TypeScript
+- Chapter 16: React + TypeScript Project
 - Chapter 17: React + TypeScript Project Part 2
 
 ## Get Started
