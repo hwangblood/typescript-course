@@ -47,9 +47,9 @@ const todaysNet = (transctions: TransactionObj): number => {
 console.log(todaysNet(todaysTransactions));
 
 // * readonly modifier
-interface TransactionObj {
-  readonly [key: string]: number;
-}
+// interface TransactionObj {
+//   readonly [key: string]: number;
+// }
 // ! can set readonly properties
 // todaysTransactions.Pizza = -100;
 
@@ -57,6 +57,20 @@ interface TransactionObj {
 console.log(todaysTransactions["Dave"]); // return undefined
 
 // * Required properties combined with an index signature
+interface TransactionObj {
+  readonly [key: string]: number;
+  Pizza: number;
+  Books: number;
+  Job: number;
+}
+
+const todaysTransactions2: TransactionObj = {
+  Pizza: -10,
+  Books: -5,
+  Job: 50,
+  Dave: 42,
+};
+
 // * Optional properties
 // * keyof Assertions
 // * Record utility type vs index signatures
