@@ -53,11 +53,23 @@ const todaysTransactions2 = {
     Job: 50,
     Dave: 42,
 };
+// * Optional properties
+// interface Student {
+//   [key: string]: string | number | number[] | undefined;
+//   name: string;
+//   GPA: number;
+//   classes?: number[];
+// }
 const student = {
     name: "Doug",
     GPA: 3.5,
     // classes: [1, 2, 3],  // * this is optional, you don't have to set it
 };
-console.log(student.test); // undefined
-// * keyof Assertions
+for (let key in student) {
+    // keyof Student is a enum of the keys of Student, such as 'name' | 'GPA' | 'classes'
+    console.log(`${key}: ${student[key]}`);
+}
+Object.keys(student).map((key) => {
+    console.log(student[key]);
+});
 // * Record utility type vs index signatures
