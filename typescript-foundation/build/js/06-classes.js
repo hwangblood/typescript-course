@@ -82,4 +82,23 @@ const classicplayer = new ClassicPlayer("VCL", "guitar");
 const message = classicplayer.play("rock");
 console.log(message);
 // * Static Class Members
+class Peeps {
+    static getCount() {
+        return Peeps.count;
+    }
+    constructor(name) {
+        this.name = name;
+        this.name = name;
+        this.id = ++Peeps.count;
+    }
+}
+Peeps.count = 0;
+console.log(`Peeps' count: ${Peeps.count}`);
+const peeps = new Peeps("VCL");
+console.log(peeps);
+const peeps2 = new Peeps("VCL2");
+console.log(peeps2);
+const peeps3 = new Peeps("VCL3");
+console.log(peeps3);
+console.log(`Peeps' count: ${Peeps.count}`);
 // * Getters & Setters

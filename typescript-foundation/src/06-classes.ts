@@ -111,5 +111,29 @@ const message = classicplayer.play("rock");
 console.log(message);
 
 // * Static Class Members
+class Peeps {
+  static count: number = 0;
+
+  static getCount(): number {
+    return Peeps.count;
+  }
+
+  public id: number;
+
+  constructor(public name: string) {
+    this.name = name;
+    this.id = ++Peeps.count;
+  }
+}
+console.log(`Peeps' count: ${Peeps.count}`);
+
+const peeps = new Peeps("VCL");
+console.log(peeps);
+const peeps2 = new Peeps("VCL2");
+console.log(peeps2);
+const peeps3 = new Peeps("VCL3");
+console.log(peeps3);
+
+console.log(`Peeps' count: ${Peeps.count}`);
 
 // * Getters & Setters
