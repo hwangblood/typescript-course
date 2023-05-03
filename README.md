@@ -60,3 +60,6 @@ tsc --watch --noEmitOnError
 ## Resourses
 
 - [Index Signatures in TypeScript](https://dmitripavlutin.com/typescript-index-signatures/)
+- [TypeScript Generics – Use Case and Examples](https://www.freecodecamp.org/news/typescript-generics-use-case-example/)
+- [Complete Guide to Using Typescript Generics - CopyCat Blog](https://www.copycat.dev/blog/typescript-generics/)
+- [Using TypeScript generics to create reusable components](https://blog.logrocket.com/using-typescript-generics-create-reusable-components/)
