@@ -161,3 +161,27 @@ console.log(getUsersProperty(usersArray, "email"));
 console.log(getUsersProperty(usersArray, "username"));
 
 // * Class with Generics
+class StateObject<T> {
+  private data: T;
+
+  constructor(value: T) {
+    this.data = value;
+  }
+
+  get state(): T {
+    return this.data;
+  }
+
+  set state(value: T) {
+    this.data = value;
+  }
+}
+
+const store = new StateObject("John"); // 'John' is a string, and data is infer to be string
+console.log(store.state);
+store.state = "Dave";
+//store.state = 12
+
+const myState = new StateObject<(string | number | boolean)[]>([15]);
+myState.state = ["Dave", 42, true];
+console.log(myState.state);
