@@ -61,3 +61,6 @@ tsc --watch --noEmitOnError
 - [TypeScript Generics – Use Case and Examples](https://www.freecodecamp.org/news/typescript-generics-use-case-example/)
 - [Complete Guide to Using Typescript Generics - CopyCat Blog](https://www.copycat.dev/blog/typescript-generics/)
 - [Using TypeScript generics to create reusable components](https://blog.logrocket.com/using-typescript-generics-create-reusable-components/)
+- [Documentation - Utility Types - TypeScript](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+- [Utility Types In Typescript - DEV Community](https://dev.to/kalashin1/utility-types-in-typescript-4nfo)
+- [A Complete Guide to TypeScript Utility Types - Cam McHenry](https://camchenry.com/blog/typescript-utility-types)
