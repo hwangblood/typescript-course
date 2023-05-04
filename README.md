@@ -22,6 +22,11 @@ Learn Typescript from absolute beginner to full projects to React + Typescript i
 - Chapter 16: React + TypeScript Project
 - Chapter 17: React + TypeScript Project Part 2
 
+## Projects TOC
+
+- [typescript-foundation](./typescript-foundation) - Chapter 1 ~ 9
+- [typescript-project](./typescript-project) - Chapter 11
+
 ## Get Started
 
 Global Install Typescript with `npm`:
