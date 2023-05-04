@@ -1,5 +1,7 @@
+import Heading from "./components/Heading";
+
 function App() {
-  return <div>App</div>;
+  return <Heading title={"Typescript React Project"} />;
 }
 
 export default App;
