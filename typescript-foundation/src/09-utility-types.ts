@@ -105,6 +105,10 @@ type highGrades = Extract<LetterGrades, "A" | "B">;
 type highGrades2 = Extract<LetterGrades, "A" | "F">; // "F" is not existed
 
 // * Nonnullable
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype
+type AllPossibleGrades = "Dave" | "John" | null | undefined;
+type NamesOnly = NonNullable<AllPossibleGrades>; // null and undefined is not included
+
 // * ReturnType
 // * Parameters
 // * Awaited

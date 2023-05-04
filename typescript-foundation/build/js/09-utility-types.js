@@ -49,7 +49,6 @@ const preview = {
     studentId: "k123",
     title: "Final Project",
 };
-// * Nonnullable
 // * ReturnType
 // * Parameters
 // * Awaited
