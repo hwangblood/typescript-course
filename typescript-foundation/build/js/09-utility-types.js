@@ -27,6 +27,20 @@ recordAssignment(Object.assign(Object.assign({}, assignGraded), { verified: true
 // ! Argument of type 'Readonly<Assignment>' is not assignable to parameter of type 'Required<Assignment>'.
 // recordAssignment(assignVerified);
 // * Record
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type
+const hexColorMap = {
+    red: "FF0000",
+    green: "00FF00",
+    blue: "0000FF",
+};
+const finalGrades = {
+    Sara: "B",
+    Kelly: "U",
+};
+const gradeData = {
+    Sara: { assign1: 85, assign2: 93 },
+    Kelly: { assign1: 76, assign2: 15 },
+};
 // * Pick and Omit
 // * Exclude and Extract
 // * Nonnullable
