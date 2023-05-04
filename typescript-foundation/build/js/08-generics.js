@@ -42,7 +42,31 @@ console.log(isTrue([])); // modified
 console.log(isTrue([1, 2, 3]));
 console.log(isTrue(NaN));
 console.log(isTrue(-0));
-// * Interface with Generic example
+const checkBoolValue = (arg) => {
+    // we say an empty array is false
+    if (Array.isArray(arg) && !arg.length) {
+        return { value: arg, is: false };
+    }
+    // if an object have no keys, we say it is false
+    if (isObject(arg) && !Object.keys(arg).length) {
+        return { value: arg, is: false };
+    }
+    return { value: arg, is: !!arg };
+};
+console.log(checkBoolValue(false));
+console.log(checkBoolValue(0));
+console.log(checkBoolValue(true));
+console.log(checkBoolValue(1));
+console.log(checkBoolValue("Dave"));
+console.log(checkBoolValue(""));
+console.log(checkBoolValue(null));
+console.log(checkBoolValue(undefined));
+console.log(checkBoolValue({})); // modified
+console.log(checkBoolValue({ name: "Dave" }));
+console.log(checkBoolValue([])); // modified
+console.log(checkBoolValue([1, 2, 3]));
+console.log(checkBoolValue(NaN));
+console.log(checkBoolValue(-0));
 // * Narrowing Generics with Extends
 // * Multiple Type Variables & Extends with keyof
 // * Class with Generics
