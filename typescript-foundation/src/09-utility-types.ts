@@ -79,6 +79,22 @@ const gradeData: Record<Students, Grades> = {
 };
 
 // * Pick and Omit
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys
+type AssignResult = Pick<Assignment, "studentId" | "grade">;
+
+const score: AssignResult = {
+  studentId: "k123",
+  grade: 85,
+};
+
+type AssignPreview = Omit<Assignment, "grade" | "verified">;
+
+const preview: AssignPreview = {
+  studentId: "k123",
+  title: "Final Project",
+};
+
 // * Exclude and Extract
 // * Nonnullable
 // * ReturnType
