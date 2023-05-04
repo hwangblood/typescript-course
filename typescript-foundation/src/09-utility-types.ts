@@ -96,6 +96,14 @@ const preview: AssignPreview = {
 };
 
 // * Exclude and Extract
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#excludeuniontype-excludedmembers
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#extracttype-union
+type adjustedGrade = Exclude<LetterGrades, "U">;
+type adjustedGrade2 = Exclude<LetterGrades, "C" | "U">;
+
+type highGrades = Extract<LetterGrades, "A" | "B">;
+type highGrades2 = Extract<LetterGrades, "A" | "F">; // "F" is not existed
+
 // * Nonnullable
 // * ReturnType
 // * Parameters

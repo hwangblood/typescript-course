@@ -49,7 +49,6 @@ const preview = {
     studentId: "k123",
     title: "Final Project",
 };
-// * Exclude and Extract
 // * Nonnullable
 // * ReturnType
 // * Parameters
