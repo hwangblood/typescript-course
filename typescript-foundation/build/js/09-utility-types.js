@@ -57,5 +57,7 @@ const createNewAssign = (title, points) => {
 };
 const tsAssign = createNewAssign("Utility Types", 100);
 console.log(tsAssign);
-// * Parameters
+const assignArgs = ["Generics", 100];
+const tsAssign2 = createNewAssign(...assignArgs);
+console.log(tsAssign2);
 // * Awaited

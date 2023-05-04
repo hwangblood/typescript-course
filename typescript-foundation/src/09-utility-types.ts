@@ -123,4 +123,12 @@ const tsAssign: NewAssign = createNewAssign("Utility Types", 100);
 console.log(tsAssign);
 
 // * Parameters
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#parameterstype
+type AssignParams = Parameters<typeof createNewAssign>;
+
+const assignArgs: AssignParams = ["Generics", 100];
+
+const tsAssign2: NewAssign = createNewAssign(...assignArgs);
+console.log(tsAssign2);
+
 // * Awaited
