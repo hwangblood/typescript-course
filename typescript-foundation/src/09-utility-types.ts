@@ -110,5 +110,17 @@ type AllPossibleGrades = "Dave" | "John" | null | undefined;
 type NamesOnly = NonNullable<AllPossibleGrades>; // null and undefined is not included
 
 // * ReturnType
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype
+
+// type newAssign = { title: string, points: number }
+const createNewAssign = (title: string, points: number) => {
+  return { title, points };
+};
+
+type NewAssign = ReturnType<typeof createNewAssign>;
+
+const tsAssign: NewAssign = createNewAssign("Utility Types", 100);
+console.log(tsAssign);
+
 // * Parameters
 // * Awaited

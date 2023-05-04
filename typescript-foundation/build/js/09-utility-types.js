@@ -50,5 +50,12 @@ const preview = {
     title: "Final Project",
 };
 // * ReturnType
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype
+// type newAssign = { title: string, points: number }
+const createNewAssign = (title, points) => {
+    return { title, points };
+};
+const tsAssign = createNewAssign("Utility Types", 100);
+console.log(tsAssign);
 // * Parameters
 // * Awaited
