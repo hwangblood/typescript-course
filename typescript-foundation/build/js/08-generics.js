@@ -67,6 +67,11 @@ console.log(checkBoolValue([])); // modified
 console.log(checkBoolValue([1, 2, 3]));
 console.log(checkBoolValue(NaN));
 console.log(checkBoolValue(-0));
-// * Narrowing Generics with Extends
+const processUser = (user) => {
+    // process the user with logic here
+    return user;
+};
+console.log(processUser({ id: 1, name: "Dave" }));
+// console.log(processUser({ name: "Dave" }));  // ! user param isn't match HasID interface
 // * Multiple Type Variables & Extends with keyof
 // * Class with Generics
