@@ -27,6 +27,7 @@ Learn Typescript from absolute beginner to full projects to React + Typescript i
 - [typescript-foundation](./typescript-foundation) - Chapter 1 ~ 9
 - [typescript-project](./typescript-project) - Chapter 11
 - [typescript-react-project](./typescript-react-project) - Chapter 12
+- [typescript-react-hooks-project](./typescript-react-hooks-project) - Chapter 13
 
 ## Get Started
 
