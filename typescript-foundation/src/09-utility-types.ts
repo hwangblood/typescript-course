@@ -131,4 +131,26 @@ const assignArgs: AssignParams = ["Generics", 100];
 const tsAssign2: NewAssign = createNewAssign(...assignArgs);
 console.log(tsAssign2);
 
-// * Awaited
+// * Awaited - helps us with the ReturnType of a Promise
+// https://www.typescriptlang.org/docs/handbook/utility-types.html#awaitedtype
+interface User {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+}
+
+const fetchUsers = async (): Promise<User[]> => {
+  const data = await fetch("https://jsonplaceholder.typicode.com/users")
+    .then((res) => {
+      return res.json();
+    })
+    .catch((err) => {
+      if (err instanceof Error) console.log(err.message);
+    });
+  return data;
+};
+
+type FetchUsersReturnType = Awaited<ReturnType<typeof fetchUsers>>;
+
+fetchUsers().then((users: FetchUsersReturnType) => console.log(users));
