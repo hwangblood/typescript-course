@@ -3,6 +3,7 @@ import Counter from "./components/Counter";
 import CounterFromParent from "./components/CounterFromParent";
 import Heading from "./components/Heading";
 import Section from "./components/Section";
+import List from "./components/List";
 
 function App() {
   const [count, setCount] = useState<number>(0);
@@ -15,6 +16,10 @@ function App() {
       <CounterFromParent setCount={setCount}>
         Count is {count}
       </CounterFromParent>
+      <List
+        items={["☕ Coffee", "🌮 Tacos", "💻 Code"]}
+        itemRender={(item: string) => <span className="bold gold">{item}</span>}
+      />
     </>
   );
 }
