@@ -31,6 +31,9 @@ const initApp = (): void => {
     fullList.addItem(newItem);
     // Re-render list with new item added
     template.render(fullList);
+    // Clear input field to empty string, after adding new item.
+    // This is to prevent adding the same item again.
+    input.value = "";
   });
 
   // Add listener to "Clear" button
