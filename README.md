@@ -19,7 +19,7 @@ Learn Typescript from absolute beginner to full projects to React + Typescript i
 - Chapter 13: React Hooks + TypeScript
 - Chapter 14: React useReducer + TypeScript
 - Chapter 15: React useContext + TypeScript
-- Chapter 16: React + TypeScript Project
+- Chapter 16: React + TypeScript Project Part 1
 - Chapter 17: React + TypeScript Project Part 2
 
 ## Projects TOC
@@ -30,6 +30,7 @@ Learn Typescript from absolute beginner to full projects to React + Typescript i
 - [typescript-react-hooks-project](./typescript-react-hooks-project) - Chapter 13
 - [typescript-react-useReducer](./typescript-react-useReducer) Chapter 14 (Learn useReducer with Typescript + React Hooks)
 - [typescript-react-useContext](./typescript-react-useContext) Chapter 15 (Context API React + Typescript | useContext & useReducer Examples) **starting from chapter 14**
+- [typescript-react-shopping-cart](./typescript-react-shopping-cart) Chapter 16, 17
 
 ## Get Started
 
