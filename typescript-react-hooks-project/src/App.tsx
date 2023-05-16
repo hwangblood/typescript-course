@@ -25,6 +25,11 @@ const App = () => {
   const [users, setUsers] = useState<User[] | null>(null);
 
   const inputRef = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    console.log("inputRef before referencing");
+    console.log(inputRef?.current);
+    console.log(inputRef?.current?.value);
+  }, []);
 
   useEffect(
     () => {
