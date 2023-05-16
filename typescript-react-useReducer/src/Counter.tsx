@@ -11,6 +11,10 @@ const enum REDUCER_ACTION_TYPE {
   DECREMENT,
 }
 
+type ReducerAction = {
+  type: REDUCER_ACTION_TYPE;
+};
+
 const Counter = ({ children }: CounterProps) => {
   const [count, setCount] = useState<number>(0);
 
