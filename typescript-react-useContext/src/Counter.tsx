@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { useCounter } from "./context/CounterContext";
-import { useCounterText } from "./context/CounterContext";
+import useCounter from "./hooks/useCounter";
+import useCounterText from "./hooks/useCounterText";
 
 type ChildrenType = {
   children: (num: number) => ReactNode;
