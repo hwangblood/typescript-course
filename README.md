@@ -28,6 +28,7 @@ Learn Typescript from absolute beginner to full projects to React + Typescript i
 - [typescript-project](./typescript-project) - Chapter 11
 - [typescript-react-project](./typescript-react-project) - Chapter 12
 - [typescript-react-hooks-project](./typescript-react-hooks-project) - Chapter 13
+- [typescript-react-useReducer](./typescript-react-useReducer) Chapter 14 (Learn useReducer with Typescript + React Hooks)
 
 ## Get Started
 
