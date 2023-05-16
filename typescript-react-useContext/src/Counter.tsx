@@ -5,13 +5,6 @@ type CounterProps = {
 };
 
 const Counter = ({ children }: CounterProps) => {
-  const [state, dispatch] = useReducer(reducer, initState);
-
-  const increment = () => dispatch({ type: REDUCER_ACTION_TYPE.INCREMENT });
-  const decrement = () => dispatch({ type: REDUCER_ACTION_TYPE.DECREMENT });
-  const handleTextInput = (e: ChangeEvent<HTMLInputElement>) =>
-    dispatch({ type: REDUCER_ACTION_TYPE.NEW_INPUT, payload: e.target.value });
-
   return (
     <>
       <h1>{children(state.count)}</h1>
