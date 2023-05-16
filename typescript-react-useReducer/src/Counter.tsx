@@ -1,8 +1,10 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, useReducer } from "react";
 
 type CounterProps = {
   children: (num: number) => ReactNode;
 };
+
+const initState = { count: 0 };
 
 const Counter = ({ children }: CounterProps) => {
   const [count, setCount] = useState<number>(0);
