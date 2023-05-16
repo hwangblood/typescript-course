@@ -1,4 +1,4 @@
-import { createContext, ChangeEvent, useReducer } from "react";
+import { createContext, ChangeEvent, useReducer, ReactElement } from "react";
 
 type StateType = {
   count: number;
@@ -54,3 +54,18 @@ const initContextState: UseCounterContextType = {
 
 export const CounterContext =
   createContext<UseCounterContextType>(initContextState);
+
+type ChildrenType = {
+  children?: ReactElement | undefined;
+};
+
+// * Spreading the ...initState into the Provider parameters is not really necessary. It does help document but really just creates extra boilerplate. You can pull it in from the lexical scope of the Provider since both are defined in the same file. This will also eliminate the need to use the initState in the App component. initState will simply be passed to useCounterContext in the Provider value.
+export const CounterProvider = ({
+  children /* , ...initState */,
+}: ChildrenType): ReactElement => {
+  return (
+    <CounterContext.Provider value={useCounterContext(initState)}>
+      {children}
+    </CounterContext.Provider>
+  );
+};
